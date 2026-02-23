@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Carlos Moreno - Estudiante de Programación especializado en Java, C# y Spring Boot">
+  <meta name="keywords" content="programador, desarrollador, Java, C#, Spring Boot, SQL Server, portfolio">
+  <meta name="author" content="Carlos Moreno">
+  
+  <title>Carlos Moreno - Portfolio de Programador</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Matrix Rain Background - Toda la página -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-text">
+        <span class="animate-pulse">Loading</span>
+        <span class="animate-bounce delay-100">.</span>
+        <span class="animate-bounce delay-200">.</span>
+        <span class="animate-bounce delay-300">.</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <div class="nav-brand">
+        <img src="assets/images/Gemini_Generated_Image_75pwfy75pwfy75pw - Editada.png" 
+             alt="Carlos Moreno Profile" 
+             class="nav-profile-img">
+        <div class="logo">&lt;El Rober /&gt;</div>
+      </div>
+      
+      <ul class="nav-menu hidden-mobile">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      
+      <button class="menu-toggle hidden-desktop" aria-label="Menú de navegación">☰</button>
+    </nav>
+    
+    <!-- Menú móvil -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="container hero-content">
+        <!-- Hero Profile Image -->
+        <div class="hero-profile-container animate-on-scroll animate-fadeIn">
+          <img src="assets/images/Gemini_Generated_Image_75pwfy75pwfy75pw - Editada.png" 
+               alt="Carlos Moreno" 
+               class="hero-profile-img">
+        </div>
+        
+        <h1 class="hero-title animate-on-scroll animate-scaleIn">
+          Hola, soy <span class="hero-name">Carlos Moreno</span>
+        </h1>
+        
+        <div class="hero-subtitle animate-on-scroll animate-fadeIn delay-300">
+<span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+        </div>
+        
+        <div class="hero-buttons animate-on-scroll animate-fadeInUp delay-500">
+          <a href="#contact" class="btn btn-primary">Contáctame</a>
+          <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+        </div>
+      </div>
+      
+      <!-- Elementos decorativos -->
+      <div class="decorative-border decorative-border-tl"></div>
+      <div class="decorative-border decorative-border-br"></div>
+      
+      <!-- Código decorativo -->
+      <div class="decorative-code decorative-code-left">
+        <pre>const developer = {
+  name: "Carlos Moreno",
+  languages: ["Java", "SQL"],
+  passion: "Desarrollo de software",
+  goal: "Crear soluciones"
+};</pre>
+      </div>
+      
+      <div class="decorative-code decorative-code-right">
+        <pre>function scrollToProjects() {
+  // Navegación suave a la sección de proyectos
+  document.querySelector('#projects')
+    .scrollIntoView({ behavior: 'smooth' });
+}</pre>
+      </div>
+      
+      <!-- Indicador de scroll -->
+      <a href="#about" class="scroll-indicator">↓</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="animate-on-scroll animate-fadeInUp">Sobre Mí</h2>
+        
+        <div class="about-content">
+          <p class="about-text animate-on-scroll animate-fadeInUp delay-100">
+            Soy un <span class="about-highlight">estudiante de Computación e informática</span>, un apasionado por la resolución de problemas. 
+            Actualmente estoy enfocando mi aprendizaje en el desarrollo
+            <span class="about-highlight">Backend con Java</span> , y su ecosistema
+            <span class="about-highlight">(Spring Boot)</span>.
+          </p>
+          
+          <p class="about-text animate-on-scroll animate-fadeInUp delay-200">
+            Tengo conocimientos prácticos en bases de datos relacionales, especialmente
+            <span class="about-highlight">SQL Server</span> y <span class="about-highlight">MySQL</span>,
+            enfocándome en aprender a diseñar esquemas ordenados y a realizar consultas eficientes. 
+            Sé que estoy en el inicio de mi carrera y que hay un mundo inmenso por descubrir, 
+            por lo que mi actitud es de aprendizaje continuo y constante evolución.
+          </p>
+          
+          <p class="about-text animate-on-scroll animate-fadeInUp delay-300">
+            Me caracterizo por mi capacidad de aprendizaje rápido, atención al detalle y entusiasmo por mantenerme
+            actualizado con las últimas tecnologías y mejores prácticas de la industria. Estoy siempre buscando
+            nuevos desafíos que me permitan crecer como desarrollador y contribuir a proyectos significativos.
+          </p>
+          
+          <p class="about-text animate-on-scroll animate-fadeInUp delay-400">
+            Actualmente estoy en búsqueda de oportunidades para aplicar mis conocimientos en un entorno profesional,
+            ya sea a través de prácticas, proyectos colaborativos o mi primer empleo en desarrollo de software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="animate-on-scroll animate-fadeInUp">Habilidades Técnicas</h2>
+        
+        <p class="section-subtitle animate-on-scroll animate-fadeIn delay-200">
+          Tecnologías y herramientas con las que trabajo en mis proyectos
+        </p>
+        
+        <div class="skills-grid">
+          <div class="skill-card animate-on-scroll animate-scaleIn">
+            <div class="skill-icon">☕</div>
+            <div class="skill-name">Java</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-100">
+            <div class="skill-icon">🍃</div>
+            <div class="skill-name">Spring Boot</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-400">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-name">SQL Server</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-500">
+            <div class="skill-icon">🐬</div>
+            <div class="skill-name">MySQL</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-100">
+            <div class="skill-icon">🔌</div>
+            <div class="skill-name">REST APIs</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-200">
+            <div class="skill-icon">🔑</div>
+            <div class="skill-name">JWT</div>
+          </div>
+          
+          <div class="skill-card animate-on-scroll animate-scaleIn delay-400">
+            <div class="skill-icon">🐙</div>
+            <div class="skill-name">Git</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="animate-on-scroll animate-fadeInUp">Mis Proyectos</h2>
+        
+        <p class="section-subtitle animate-on-scroll animate-fadeIn delay-200">
+          Estos son algunos de los proyectos perosnales y académicos en los que he trabajado durante mi formación como estudiante de programación.
+          Cada uno representa un desafío que me ha permitido aplicar y reforzar mis conocimientos técnicos.
+        </p>
+        
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card animate-on-scroll animate-fadeInUp">
+            <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&auto=format&fit=crop&q=60" 
+                 alt="Sistema de Gestión de Inventario" 
+                 class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Gestión de Inventario</h3>
+              <p class="project-description">
+                Aplicación desarrollada con Java y Spring Boot para gestionar inventarios de empresas pequeñas.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Thymeleaf</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="project-card animate-on-scroll animate-fadeInUp delay-200">
+            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop&q=60" 
+                 alt="API REST para E-commerce" 
+                 class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">API REST para E-commerce</h3>
+              <p class="project-description">
+                API desarrollada con Spring Boot para una tienda online, con autenticación JWT y documentación Swagger.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Swagger</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="project-card animate-on-scroll animate-fadeInUp delay-300">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&auto=format&fit=crop&q=60" 
+                 alt="Sistema de Reservas" 
+                 class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Sistema Reservas de Canchas de futbol</h3>
+              <p class="project-description">
+                Aplicación Web para gestionar reservas de canchas de futbol servicios con interfaz responsive.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- GitHub link section -->
+        <div class="github-link-section animate-on-scroll animate-fadeInUp">
+          <p>Todos estos proyectos están disponibles en mi repositorio de GitHub.</p>
+          <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="github-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Ver más en GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="animate-on-scroll animate-fadeInUp">Contacto</h2>
+        
+        <p class="section-subtitle animate-on-scroll animate-fadeIn delay-200">
+          ¿Tienes un proyecto interesante o quieres contactarme? Estoy abierto a oportunidades de colaboración,
+          prácticas profesionales y proyectos interesantes. ¡Escríbeme un mensaje!
+        </p>
+        
+        <div class="contact-grid">
+          <!-- Información de contacto -->
+          <div class="contact-info animate-on-scroll animate-slideInLeft">
+            <h3>Información de Contacto</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Ubicación</h4>
+                <p>Tu Ciudad, País</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Teléfono</h4>
+                <p>+XX XXX XXX XXX</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>tu@email.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-socials">
+              <h3>Sígueme en</h3>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" 
+                   class="social-link linkedin" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                </a>
+                
+                <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" 
+                   class="social-link github" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                </a>
+                
+                <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer" 
+                   class="social-link twitter" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                </a>
+                
+                <a href="mailto:tu@email.com" 
+                   class="social-link email" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Formulario de contacto -->
+          <div class="contact-form-section animate-on-scroll animate-slideInRight">
+            <h3>Envíame un Mensaje</h3>
+            
+            <div class="form-success">
+              ¡Mensaje enviado exitosamente! Te contactaré pronto.
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-input" placeholder="Tu nombre completo">
+                <span class="form-error">Este campo es requerido</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="tu@email.com">
+                <span class="form-error">Por favor ingresa un email válido</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-textarea" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="form-error">El mensaje debe tener al menos 10 caracteres</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Elementos decorativos de fondo -->
+      <div class="bg-decoration bg-decoration-1"></div>
+      <div class="bg-decoration bg-decoration-2"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Carlos Moreno - Portfolio</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidad</a>
+        <span>|</span>
+        <a href="#">Términos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/matrixRain.js"></script>
+  <script src="js/contactForm.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Año actual en el footer -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
